@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "corbel";
+  font-size: 16px;
+  background-color: #fdf1e5;
+  color: #3e5e35;
+}
+
+/************ MENU ************/
+.header {
+  z-index: 10;
+}
+
+.menu1 {
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 150px;
+}
+.menu1 img {
+  height: 60px;
+  width: auto;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+}
+.menu1 div {
+  display: flex;
+  grid-column: 3;
+  justify-self: end;
+  align-self: center;
+  padding-right: 20px;
+  gap: 20px;
+}
+.menu1 div img {
+  height: 40px;
+  width: auto;
+}
+.menu1 div button {
+  padding: 10px 25px;
+  background-color: #ff9635;
+  border: none;
+  font-weight: bold;
+  color: #3e5e35;
+}
+.menu1 div button:hover {
+  cursor: pointer;
+  background-color: #3e5e35;
+  color: #ff9635;
+  transition: background-color 0.3s ease;
+}
+
+.menu2 {
+  display: flex;
+  background-color: #3e5e35;
+  height: 60px;
+  box-sizing: border-box;
+  justify-content: center;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+.menu2 .mm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu2 .mm li {
+  list-style: none;
+}
+.menu2 .mm li .casemenu {
+  border-right: 2px solid #c2c4af;
+}
+.menu2 .mm li .casemenu:hover {
+  background-color: #3e5127;
+  color: #fdf1e5;
+}
+.menu2 .mm li .active {
+  background-color: #3e5127;
+  color: #fdf1e5;
+}
+.menu2 .mm li .fin {
+  border: none;
+}
+.menu2 .mm li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #9da78d;
+}
+
+/************ MAIN ************/
+.prez {
+  z-index: 1;
+  background-image: url(img/renard_header2.jpg);
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+.prez .thetext {
+  color: #fff;
+  width: 70%;
+  backdrop-filter: blur(20px);
+  border-right: 5px solid #fdf1e5;
+  padding: 7% 10% 10%;
+  text-align: justify;
+}
+.prez .thetext h1 {
+  padding-bottom: 8%;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-color: #ff9635;
+}
+.prez .thetext .un {
+  padding-bottom: 5%;
+}
+.prez .thetext span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.prez .thetext .rond {
+  height: 60px;
+  width: 60px;
+  background-color: #fdf1e5;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ff9635;
+  gap: 5px;
+  right: -60px;
+  bottom: 50%;
+  transform: translate(-50%);
+}
+.prez .thetext .rond .img1 {
+  height: 10px;
+  width: auto;
+  transform: rotate(90deg);
+}
+.prez .thetext .rond .img2 {
+  height: 10px;
+  width: auto;
+  transform: rotate(-90deg);
+}
+
+.sep {
+  padding: 50px;
+  justify-content: center;
+}
+.sep div {
+  justify-content: center;
+}
+.sep img {
+  justify-content: center;
+  height: auto;
+  width: 20px;
+}
+
+.raison {
+  background-color: #3e5e35;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2% 5%;
+}
+.raison h1 {
+  text-align: center;
+  padding-bottom: 4%;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-color: #ff9635;
+}
+.raison .thetext {
+  display: flex;
+}
+.raison .thetext .p1 {
+  padding: 0 20px;
+  text-align: justify;
+}
+.raison .thetext .p1 .un {
+  padding-bottom: 10px;
+}
+.raison .thetext .p1 span {
+  color: #ff9635;
+}
+.raison .thetext .p1 .sun {
+  font-size: 24px;
+  font-weight: bold;
+}
+.raison .thetext .p1 a {
+  color: #ff9635;
+  font-style: italic;
+  opacity: 50%;
+  text-decoration: none;
+}
+.raison .thetext img {
+  height: auto;
+  width: 175px;
+  padding: 10px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5% 5%;
+}
+.plan h1 {
+  text-align: center;
+  padding-bottom: 5%;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-color: #ff9635;
+}
+.plan .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.plan .cards .card {
+  width: 25%;
+  height: 50%;
+}
+.plan .cards .card h3 {
+  padding: 20px;
+  text-align: center;
+  border: 3px solid #3e5e35;
+}
+.plan .cards .card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.agir {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 5% 0;
+}
+.agir h1 {
+  text-align: center;
+  padding-bottom: 5%;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-color: #ff9635;
+}
+.agir .dedans {
+  display: flex;
+  width: 100%;
+}
+.agir .dedans .texte {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 10px;
+}
+.agir .dedans .texte .ligne {
+  background-color: #3e5e35;
+  color: #fff;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 30px 70px;
+  font-size: 24px;
+}
+.agir .dedans .texte .ligne img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.agir .dedans .texte .ligne span {
+  font-weight: bold;
+}
+.agir .dedans img {
+  width: 30%;
+  object-fit: cover;
+}
+
+footer .fun {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+footer .fun .text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5% 0;
+}
+footer .fun .text h3 {
+  padding-bottom: 30px;
+}
+footer .fun .text p {
+  padding-bottom: 20px;
+}
+footer .fun .text .logos img {
+  width: 100px;
+  height: auto;
+}
+footer .fun .text button {
+  padding: 15px 35px;
+  background-color: #ff9635;
+  border: none;
+  font-weight: bold;
+  color: #3e5e35;
+}
+footer .fun .text button:hover {
+  cursor: pointer;
+  background-color: #3e5e35;
+  color: #ff9635;
+  transition: background-color 0.3s ease;
+}
+footer .fun .reseaux {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer .fun .reseaux img {
+  height: 40px;
+  width: auto;
+}
+footer .fdeux {
+  text-align: center;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
