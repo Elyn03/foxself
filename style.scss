@@ -15,7 +15,6 @@ body {
 
 .menu1 {
     display: grid;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 150px;
 
@@ -58,6 +57,7 @@ body {
 }
 
 .menu2 {
+    box-shadow: 10px 10px 10px #970707;
     display: flex;
     background-color: #3e5e35;
     height: 60px;
